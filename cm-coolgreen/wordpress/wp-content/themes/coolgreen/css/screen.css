@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;600;700&display=swap");
+body {
+  font-family: 'Open sans';
+  color: #1c140d;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.o-page__main-nav {
+  position: relative;
+}
+
+.o-page__content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+.o-fullwidth {
+  background-color: #cbe86b;
+}
+
+.o-fullwidth__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.o-catalogus {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-catalogus__item {
+  box-sizing: border-box;
+  flex-basis: 256px;
+  padding: 0.5rem;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-header__actions {
+  color: #fff;
+}
+
+.c-header-image {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.c-header-image__symbol {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.c-search {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+
+.c-search__input {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  flex-grow: 1;
+}
+
+.c-search__action {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  color: #99bb2a;
+}
+
+.c-main-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -0.5em;
+  cursor: default;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.c-main-nav__item {
+  box-sizing: border-box;
+  padding: 0.75rem 0;
+  margin: 0 0.5rem;
+  border-bottom: 4px solid #f2e9e1;
+}
+
+.c-main-nav__item:hover {
+  border-bottom: 4px solid #99bb2a;
+}
+
+.c-main-nav__item:hover > .c-main-nav__subitem {
+  display: block;
+}
+
+.c-main-nav__subitem {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.c-main-nav-subcat {
+  margin: -0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+.c-main-nav-subcat__collection {
+  padding: 0;
+  margin: 0.5rem;
+  list-style: none;
+  width: 256px;
+}
+
+.c-main-nav-subcat__item {
+  size: 1.25rem;
+}
+
+.c-main-nav-subcat__item--niv2 {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.c-main-nav-subcat__item--niv3 {
+  padding: .125rem 0;
+}
+
+.c-main-nav-subcat__link {
+  color: #1c140d;
+}
+
+@media screen and (max-width: 500px) {
+  .c-main-nav-subcat {
+    height: auto;
+  }
+}
+
+.c-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0rem;
+  color: white;
+}
+
+.c-footer-nav__col {
+  box-sizing: border-box;
+  list-style-type: none;
+  flex-basis: 256px;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+
+.c-footer-nav__item {
+  font-size: 0.75rem;
+  padding-bottom: 0.125rem;
+}
+
+.c-footer-nav__item--head {
+  font-size: 1rem;
+  padding-bottom: 0.125rem;
+}
+
+.c-footer-nav__link {
+  color: #fff;
+}
+
+.c-mini-product__image {
+  height: 200px;
+}
+
+.c-mini-product__link {
+  color: #99bb2a;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.c-mini-product__price {
+  display: flex;
+  flex-direction: row;
+}
+
+.c-mini-product__symbol {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.c-product__description {
+  margin-bottom: 0.5rem;
+}
+
+.c-product__image {
+  flex-grow: 1;
+}
+
+.c-product__info {
+  flex-basis: 256px;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c-product__price {
+  display: flex;
+  font-size: 1.125rem;
+}
+
+.c-product__title {
+  margin: 0 0 0.5rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .c-product {
+    flex-direction: column;
+  }
+  .c-product__info {
+    flex-basis: auto;
+    order: 1;
+  }
+  .c-product__image {
+    order: 2;
+  }
+  .c-product__symbol {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.c-price {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.c-price:after {
+  content: ',-';
+}
+
+.c-price--old {
+  font-weight: 200;
+  color: #9fa195;
+  text-decoration: line-through;
+}
+
+.u-background--main {
+  background-color: #cbe86b;
+}
+
+.u-background--sec {
+  background-color: #f2e9e1;
+}
+
+.u-background--white {
+  background-color: #f3f1f0;
+}
+/*# sourceMappingURL=screen.css.map */

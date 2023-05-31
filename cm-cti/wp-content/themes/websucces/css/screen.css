@@ -1,0 +1,15 @@
+.nav-link {
+  color: black;
+  text-align: right;
+}
+
+.row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.c-body {
+  background-color: #3B3B3B;
+  color: white;
+}
+/*# sourceMappingURL=screen.css.map */

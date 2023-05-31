@@ -1,0 +1,13 @@
+.active-2 .main-menu > ul > li.dropdown:hover > a:after,
+.active-2 .main-menu > ul > li.dropdown.focus > a:after,
+.active-2 .main-menu > ul > li.active > a,
+.active-2 .main-menu > ul > li:hover > a,
+.active-2 .main-menu > ul > li.focus > a {
+  background-color: transparent;
+  border-bottom: 4px solid #0088cc;
+  color: #0088cc;
+}
+
+.active-2 .main-menu > ul > li > a {
+  border-radius: 0;
+}
